@@ -1,0 +1,39 @@
+@mixin reset {
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -moz-transform: $property;
+  -ms-transform: $property;
+  -o-transform: $property;
+  transform: $property;
+}
+
+@mixin transition($transition) {
+  -webkit-transform: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+@mixin placeholder {
+  &::placeholder {
+    color: #aaa;
+  }
+  &:-ms-input-placeholder {
+    color: #aaa;
+  }
+  &::-ms-input-placeholder {
+    color: #aaa;
+  }
+}

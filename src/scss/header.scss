@@ -1,0 +1,20 @@
+@import "../scss/mixins";
+@import "../scss/search.scss";
+
+.header {
+  @include center;
+  width: 100%;
+  background-color: var(--primary);
+  font-size: 15px;
+  height: 60px;
+  .logo {
+    display: flex;
+    .logo__image {
+      width: 40px;
+      flex: 1;
+    }
+    .logo__text {
+      color: var(--text-header);
+    }
+  }
+}

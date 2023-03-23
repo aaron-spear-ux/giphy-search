@@ -1,0 +1,14 @@
+$font-stack: "Inter", Tahoma, Geneva, Verdana, sans-serif;
+
+body {
+  margin: 0;
+  background-color: var(--bg-main);
+  font: 14px/18px $font-stack;
+  color: var(--text);
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
