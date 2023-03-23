@@ -28,12 +28,48 @@
 
 @mixin placeholder {
   &::placeholder {
-    color: #aaa;
+    color: var(--text);
+    opacity: 0.5;
+    font-weight: 300;
   }
   &:-ms-input-placeholder {
-    color: #aaa;
+    color: var(--text);
+    opacity: 0.5;
+    font-weight: 300;
   }
   &::-ms-input-placeholder {
-    color: #aaa;
+    color: var(--text);
+    opacity: 0.5;
+    font-weight: 300;
+  }
+}
+
+@mixin placeholder-transparent {
+  &::placeholder {
+    color: transparent;
+  }
+  &:-ms-input-placeholder {
+    color: transparent;
+  }
+  &::-ms-input-placeholder {
+    color: transparent;
+  }
+}
+
+@keyframes border_anim {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes border_close_anim {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
   }
 }
