@@ -1,0 +1,1 @@
+body{margin:0;background-color:var(--bg-main);font:14px/18px Inter,Tahoma,Geneva,Verdana,sans-serif;color:var(--text)}app-root{display:flex;flex-direction:column;min-height:100vh}:root{--primary: #34373c;--secondary: #50545c;--highlight: rgb(153, 51, 255, .7);--text: #ccc;--text-light: #eee;--text-header: #fff;--bg-main: #141518;--border: #444}*{box-sizing:border-box}
