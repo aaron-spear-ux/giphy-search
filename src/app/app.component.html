@@ -1,35 +1,4 @@
-<!-- Header --->
-<div class="header">
-  <div class="header__wrapper">
-    <div class="logo">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 40 35"
-        class="logo__image"
-      >
-        <g fill-rule="evenodd" clip-rule="evenodd">
-          <path fill="#00ff99" d="M0 3h4v29H0z"></path>
-          <path fill="#9933ff" d="M24 11h4v21h-4z"></path>
-          <path fill="#00ccff" d="M0 31h28v4H0z"></path>
-          <path fill="#fff35c" d="M0 0h16v4H0z"></path>
-          <path fill="#ff6666" d="M24 8V4h-4V0h-4v12h12V8"></path>
-          <path fill="#121212" opacity="0.4" d="M24 16v-4h4M16 0v4h-4"></path>
-        </g>
-      </svg>
-      <h1 class="logo__text">GIPHY SEARCH</h1>
-    </div>
-    <div class="search">
-      <div class="search__wrapper">
-        <input
-          (change)="searchGif($event.target)"
-          type="search"
-          placeholder="Search all the GIFs"
-        />
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
-    </div>
-  </div>
-</div>
+<app-header (change)="searchGif($event.target)"></app-header>
 <!-- Grid --->
 <div class="grid-container">
   <ngx-giphy-grid
@@ -50,10 +19,4 @@
     </picture>
   </ngx-giphy-grid>
 </div>
-<!-- Footer --->
-<div class="footer">
-  <div class="footer__wrapper">
-    <a href="https://giphy.com/" class="powered" target="_blank"></a>
-    <span class="copyright">© 2023 GIPHY SEARCH, All rights reserved.</span>
-  </div>
-</div>
+<app-footer></app-footer>
