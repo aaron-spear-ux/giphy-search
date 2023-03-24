@@ -17,15 +17,6 @@
       </svg>
       <h1 class="logo__text">GIPHY SEARCH</h1>
     </div>
-    <div class="search">
-      <div class="search__wrapper">
-        <input
-          (change)="searchGif($event.target)"
-          type="search"
-          placeholder="Search all the GIFs"
-        />
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
-    </div>
+    <app-search></app-search>
   </div>
 </div>
